@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function App() {
   return (
     <>
@@ -7,10 +5,14 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           <a
             href="#"
-            className="flex items-center space-x-2 text-red-600 font-extrabold text-xl select-none"
+            className="flex items-center space-x-2 font-extrabold text-xl select-none"
           >
-            <span>Mitra</span>
-            <span>Gamers</span>
+            <img
+              src="./images/logo.jpeg"
+              alt="Aothis Logo"
+              className="w-12 rounded-full"
+            />
+            <span>Aoshi</span>
           </a>
           <nav>
             <ul className="flex space-x-6 text-sm font-medium">
@@ -44,70 +46,81 @@ export default function App() {
         </div>
       </header>
 
-      <section className="relative pt-32 pb-20 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-        <div className="md:w-1/2 space-y-6">
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight max-w-lg">
-            Jadi Reseller Voucher Game <br />
-            Bersama Mitra Gamers
-          </h1>
-          <p className="text-gray-300 max-w-md text-lg leading-relaxed">
-            Bergabunglah sebagai mitra reseller voucher game dan nikmati
-            keuntungan dari produk unggulan kami dengan sistem website siap
-            pakai yang mudah digunakan.
-          </p>
-          <div className="flex space-x-4">
-            <a
-              href="#produk"
-              className="bg-red-600 px-6 py-3 rounded-md text-white font-semibold hover:bg-red-700 transition duration-300"
-            >
-              Lihat Produk
-            </a>
-            <a
-              href="#harga"
-              className="bg-gray-800 px-6 py-3 rounded-md text-red-600 font-semibold border border-red-600 hover:bg-red-600 hover:text-white transition duration-300"
-            >
-              Lihat Harga
-            </a>
-            <a
-              href="#kontak"
-              className="bg-gray-800 px-6 py-3 rounded-md text-red-600 font-semibold border border-red-600 hover:bg-red-600 hover:text-white transition duration-300"
-            >
-              Hubungi Kami
-            </a>
-          </div>
-        </div>
-
-        <div className="md:w-1/2 bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 rounded-xl shadow-xl p-6 max-w-md w-full">
-          <div className="rounded-md overflow-hidden border border-gray-700 bg-gradient-to-tr from-gray-900 to-gray-800">
-            <div className="flex space-x-1 bg-red-600 px-3 py-1 text-xs font-semibold text-black">
-              <div className="rounded-full w-3 h-3 bg-black"></div>
-              <div className="rounded-full w-3 h-3 bg-black"></div>
-              <div className="rounded-full w-3 h-3 bg-black"></div>
+      <section className="min-h-screen bg-[repeating-radial-gradient(circle_at_center,rgba(97,178,65,0.1),rgba(97,178,65,0.1)_70px,transparent_150px,transparent_100px)]">
+        <div className="container relative pt-32 pb-20 mx-auto px-6 flex flex-col md:flex-row items-center gap-12 w-full p-8">
+          <div className="md:w-3/5 space-y-6">
+            <p className="text-gray-100 text-2xl mb-0">
+              Ingin punya penghasilan dari dunia game?
+            </p>
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
+              Saatnya jadi bagian dari <br />{" "}
+              <span className="bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-5xl">
+                Mitra Aoshi!
+              </span>
+            </h1>
+            <p className="text-gray-200 max-w-md text-lg leading-relaxed">
+              Bergabunglah sebagai mitra reseller kami bersama 1000+ orang yang
+              bergabung.
+            </p>
+            <div className="flex space-x-4">
+              <a
+                href="#produk"
+                className="bg-[#61b241] px-6 py-3 rounded-md text-white font-semibold hover:bg-[#61b241]/90 transition duration-300"
+              >
+                Daftar Reseller
+              </a>
             </div>
-            <div className="px-4 py-6 flex flex-col items-center space-y-5">
-              <div className="flex space-x-4">
+          </div>
+
+          <div className="md:w-2/5 rounded-xl overflow-hidden">
+            <div className="flex space-x-1 bg-[#61b241] p-5 text-xs font-semibold text-black">
+              <div className="rounded-full w-3 h-3 bg-white"></div>
+              <div className="rounded-full w-3 h-3 bg-white"></div>
+              <div className="rounded-full w-3 h-3 bg-white"></div>
+            </div>
+            <div className="px-4 py-6 space-y-5 backdrop-blur-lg bg-white/10 border border-[#47593d] rounded-b-xl shadow">
+              <div className="grid grid-cols-3 gap-5">
                 <img
                   src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d26d692-b535-4044-8bab-a7e6dccb2d7e.png"
                   alt="Cover art of Free Fire game with bright and action-packed illustration"
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg shadow-lg flex-1/3"
                 />
                 <img
                   src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d1007f0b-fd2b-45ec-834c-2b6b00a10138.png"
                   alt="Cover art of Honor of Kings game featuring a female warrior in fantasy setting"
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg shadow-lg flex-1/3"
                 />
                 <img
                   src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/69c2ddfb-f9f4-4af0-9ed5-fd9236f2629a.png"
                   alt="Cover art of Free Fire game with survival and combat theme characters"
                   className="rounded-lg shadow-lg"
                 />
+                {/* <img
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d26d692-b535-4044-8bab-a7e6dccb2d7e.png"
+                  alt="Cover art of Free Fire game with bright and action-packed illustration"
+                  className="rounded-lg shadow-lg flex-1/3"
+                />
+                <img
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d1007f0b-fd2b-45ec-834c-2b6b00a10138.png"
+                  alt="Cover art of Honor of Kings game featuring a female warrior in fantasy setting"
+                  className="rounded-lg shadow-lg flex-1/3"
+                />
+                <img
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/69c2ddfb-f9f4-4af0-9ed5-fd9236f2629a.png"
+                  alt="Cover art of Free Fire game with survival and combat theme characters"
+                  className="rounded-lg shadow-lg"
+                /> */}
               </div>
-              <p className="text-gray-300 font-semibold">
-                50+ Produk Voucher Game
-              </p>
-              <button className="bg-red-600 text-black px-6 py-2 rounded-full font-semibold hover:bg-red-700 transition">
-                Lihat Semua
-              </button>
+              <div className="text-center">
+                <p className="text-gray-100 text-2xl font-bold">Service Kami</p>
+                <p className="text-gray-300 mb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore, officiis. Temporibus, assumenda nam asperiores,
+                </p>
+                <button className="bg-[#61b241] text-white px-6 py-2 rounded-full font-semibold hover:bg-red-[#61b241]/90 transition">
+                  Lihat Semua
+                </button>
+              </div>
             </div>
           </div>
         </div>
