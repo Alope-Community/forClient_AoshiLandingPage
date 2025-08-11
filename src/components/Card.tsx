@@ -31,10 +31,11 @@ export default function Card() {
         </p>
       </div>
 
-      <div className="bg-gradient-to-tl from-[#61b241]/70 via-[#61b241]/0 to-[#61b241]/0 absolute bottom-0 right-0 size-28"></div>
+      {/* <div className="bg-gradient-to-tl from-[#61b241]/70 via-[#61b241]/0 to-[#61b241]/0 absolute bottom-0 right-0 size-28"></div> */}
       <div className="border-t border-r border-[#61b241]/70 rounded-tr-3xl absolute top-0 right-0 size-7"></div>
       <div className="border-t border-l border-[#61b241]/70 rounded-tl-3xl absolute top-0 left-0 size-7"></div>
       <div className="border-b border-l border-[#61b241]/70 rounded-bl-3xl absolute bottom-0 left-0 size-7"></div>
+      <div className="border-b border-r border-[#61b241]/70 rounded-br-3xl absolute bottom-0 right-0 size-7"></div>
     </div>
   );
 }
