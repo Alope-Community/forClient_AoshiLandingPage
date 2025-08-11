@@ -1,3 +1,5 @@
+import Card from "./components/Card";
+
 export default function App() {
   return (
     <>
@@ -95,21 +97,6 @@ export default function App() {
                   alt="Cover art of Free Fire game with survival and combat theme characters"
                   className="rounded-lg shadow-lg"
                 />
-                {/* <img
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d26d692-b535-4044-8bab-a7e6dccb2d7e.png"
-                  alt="Cover art of Free Fire game with bright and action-packed illustration"
-                  className="rounded-lg shadow-lg flex-1/3"
-                />
-                <img
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d1007f0b-fd2b-45ec-834c-2b6b00a10138.png"
-                  alt="Cover art of Honor of Kings game featuring a female warrior in fantasy setting"
-                  className="rounded-lg shadow-lg flex-1/3"
-                />
-                <img
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/69c2ddfb-f9f4-4af0-9ed5-fd9236f2629a.png"
-                  alt="Cover art of Free Fire game with survival and combat theme characters"
-                  className="rounded-lg shadow-lg"
-                /> */}
               </div>
               <div className="text-center">
                 <p className="text-gray-100 text-2xl font-bold">Service Kami</p>
@@ -126,22 +113,21 @@ export default function App() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 py-12 flex justify-center items-center space-x-12 select-none opacity-80">
-        <img
-          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fd57a90e-527f-48fe-89a6-8a21f9eae5d4.png"
-          alt="Logo PointGo in white and red theme with minimalist styling"
-          className="h-12 object-contain"
-        />
-        <img
-          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/afa96d5b-879b-42c7-aa6a-de33bea8f6a2.png"
-          alt="Logo VEXSAGA.ID red triangle icon with text on black background"
-          className="h-12 object-contain"
-        />
-        <img
-          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b5d69b3d-3157-4a33-95ca-99f40522e0a3.png"
-          alt="Logo Hidden Game with green leaf icon and text on dark background"
-          className="h-12 object-contain"
-        />
+      <section className="container mx-auto mt-20">
+        <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3 py-2 rounded-full border border-[#61b241] text-sm font-semibold">
+          Mitra Aoshi
+        </span>
+        <h3 className="text-4xl mt-5">
+          Membuka peluang untuk kamu yang ingin{" "}
+          <span className="block bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl">
+            Memulai Bisnis!
+          </span>
+        </h3>
+        <div className="grid grid-cols-3 gap-10 mt-10">
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </section>
 
       <section id="produk" className="max-w-7xl mx-auto px-6 py-12">
