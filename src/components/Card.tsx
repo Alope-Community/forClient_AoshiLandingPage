@@ -1,4 +1,9 @@
-export default function Card() {
+type OurServiceCardProps = {
+  title: string;
+  desc: string;
+};
+
+export function OurServiceCard(props: OurServiceCardProps) {
   return (
     <div className="p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border border-white/5 relative overflow-hidden">
       <div>
@@ -23,12 +28,9 @@ export default function Card() {
       </div>
       <div className="flex flex-col gap-3">
         <h3 className="font-sans text-white font-medium text-2xl/[120%]">
-          Design
+          {props.title}
         </h3>
-        <p className="text-sm/[140%] font-sans text-white/50">
-          Setelah dasar-dasarnya jelas, ide-ide ini diwujudkan dalam bentuk
-          modul dan desain yang berbeda, yang dipadukan dengan keahlian UI/UX.
-        </p>
+        <p className="text-sm/[140%] font-sans text-white/70">{props.desc}</p>
       </div>
 
       {/* <div className="bg-gradient-to-tl from-[#61b241]/70 via-[#61b241]/0 to-[#61b241]/0 absolute bottom-0 right-0 size-28"></div> */}
@@ -36,6 +38,24 @@ export default function Card() {
       <div className="border-t border-l border-[#61b241]/70 rounded-tl-3xl absolute top-0 left-0 size-7"></div>
       <div className="border-b border-l border-[#61b241]/70 rounded-bl-3xl absolute bottom-0 left-0 size-7"></div>
       <div className="border-b border-r border-[#61b241]/70 rounded-br-3xl absolute bottom-0 right-0 size-7"></div>
+    </div>
+  );
+}
+
+type WhyChooseCardCardProps = {
+  title: string;
+  desc: string;
+};
+
+export function WhyChooseCard(props: WhyChooseCardCardProps) {
+  return (
+    <div className="p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border-2 border-white/10 relative overflow-hidden">
+      <div className="flex flex-col gap-3">
+        <h3 className="font-sans text-white font-medium text-2xl/[120%]">
+          {props.title}
+        </h3>
+        <p className="text-sm/[140%] font-sans text-white/70">{props.desc}</p>
+      </div>
     </div>
   );
 }

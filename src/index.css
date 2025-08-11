@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@keyframes pulse-gradient {
+  0% {
+    background-image: repeating-radial-gradient(
+      circle at center,
+      rgba(97, 178, 65, 0.1),
+      rgba(97, 178, 65, 0.1) 80px,
+      transparent 200px,
+      transparent 100px
+    );
+  }
+  50% {
+    background-image: repeating-radial-gradient(
+      circle at center,
+      rgba(97, 178, 65, 0.1),
+      rgba(97, 178, 65, 0.1) 100px,
+      transparent 240px,
+      transparent 120px
+    );
+  }
+  100% {
+    background-image: repeating-radial-gradient(
+      circle at center,
+      rgba(97, 178, 65, 0.1),
+      rgba(97, 178, 65, 0.1) 80px,
+      transparent 200px,
+      transparent 100px
+    );
+  }
+}
+
+.animate-pulse-gradient {
+  animation: pulse-gradient 5s ease-in-out infinite;
+}

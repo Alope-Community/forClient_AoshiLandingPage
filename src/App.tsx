@@ -1,56 +1,13 @@
-import Card from "./components/Card";
+import { OurServiceCard, WhyChooseCard } from "./components/Card";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full bg-gradient-to-b from-black/90 to-black/40 backdrop-blur-md z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <a
-            href="#"
-            className="flex items-center space-x-2 font-extrabold text-xl select-none"
-          >
-            <img
-              src="./images/logo.jpeg"
-              alt="Aothis Logo"
-              className="w-12 rounded-full"
-            />
-            <span>Aoshi</span>
-          </a>
-          <nav>
-            <ul className="flex space-x-6 text-sm font-medium">
-              <li>
-                <a href="#produk" className="hover:text-red-600 transition">
-                  Produk
-                </a>
-              </li>
-              <li>
-                <a href="#tahapan" className="hover:text-red-600 transition">
-                  Tahapan
-                </a>
-              </li>
-              <li>
-                <a href="#fitur" className="hover:text-red-600 transition">
-                  Fitur
-                </a>
-              </li>
-              <li>
-                <a href="#harga" className="hover:text-red-600 transition">
-                  Harga
-                </a>
-              </li>
-              <li>
-                <a href="#kontak" className="hover:text-red-600 transition">
-                  Kontak
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <Navbar />
 
-        <div className="bg-gradient-to-r from-[#61b241]/0 via-[#61b241]/50 to-[#61b241]/0 absolute bottom-0 right-0 left-0 h-[3px]"></div>
-      </nav>
-
-      <header className="min-h-screen bg-[repeating-radial-gradient(circle_at_center,rgba(97,178,65,0.1),rgba(97,178,65,0.1)_20px,transparent_200px,transparent_100px)]">
+      {/* <header className="min-h-screen bg-[repeating-radial-gradient(circle_at_center,rgba(97,178,65,0.1),rgba(97,178,65,0.1)_20px,transparent_200px,transparent_100px)]"> */}
+      <header className="py-20 bg-gradient-to-b from-black via-[#61b241]/30 to-black relative">
         <div className="container relative pt-32 pb-20 mx-auto px-6 flex flex-col md:flex-row items-center gap-12 w-full p-8">
           <div className="md:w-3/5 space-y-6">
             <p className="text-gray-100 text-2xl mb-0">
@@ -77,7 +34,7 @@ export default function App() {
           </div>
 
           <div className="md:w-2/5 rounded-xl overflow-hidden">
-            <div className="flex space-x-1 bg-[#61b241] p-5 text-xs font-semibold text-black">
+            <div className="flex space-x-1 bg-gradient-to-l from-[#61b241] to-emerald-600 p-5 text-xs font-semibold text-black">
               <div className="rounded-full w-3 h-3 bg-white"></div>
               <div className="rounded-full w-3 h-3 bg-white"></div>
               <div className="rounded-full w-3 h-3 bg-white"></div>
@@ -129,31 +86,41 @@ export default function App() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-black via-[#61b241]/30 to-black relative">
-        <div className="bg-gradient-to-tl from-[#61b241]/30 via-[#61b241]/0 to-[#61b241]/0 absolute bottom-0 right-0 size-56 z-10"></div>
-
+      {/* <section className="py-20 bg-gradient-to-br from-black via-[#61b241]/20 to-black relative"> */}
+      <section className="py-20 bg-gradient-to-br from-black to-[#61b241]/40 relative">
         <div className="container mx-auto">
-          <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3 py-2 rounded-full border border-[#61b241] text-sm font-semibold">
+          {/* <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3 py-2 rounded-full border border-[#61b241] text-sm font-semibold">
             Mitra Aoshi
-          </span>
+          </span> */}
           <h3 className="text-4xl mt-5">
             Membuka peluang untuk kamu yang ingin{" "}
             <span className="block bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl">
               Memulai Bisnis!
             </span>
           </h3>
+
           <div className="grid grid-cols-3 gap-10 mt-10">
-            <Card />
-            <Card />
-            <Card />
+            <OurServiceCard
+              title="Top Up All Games Termurah"
+              desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero minus nemo corrupti nisi consequatur ab Libero minus nemo corrupti nisi consequatur ab."
+            />
+            <OurServiceCard
+              title="Joki MLBB Terpercaya"
+              desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero minus nemo corrupti nisi consequatur ab Libero minus nemo corrupti nisi consequatur ab."
+            />
+            <OurServiceCard
+              title="Jual Akun Game"
+              desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero minus nemo corrupti nisi consequatur ab Libero minus nemo corrupti nisi consequatur ab."
+            />
           </div>
         </div>
       </section>
 
       {/*  */}
 
-      <section className="bg-gradient-to-tr from-black via-[#61b241]/30 to-black px-6 shadow-lg py-20 relative">
-        <div className="bg-gradient-to-bl from-[#61b241]/30 via-[#61b241]/0 to-[#61b241]/0 absolute top-0 right-0 size-56 z-10"></div>
+      {/* <section className="bg-gradient-to-tr from-black via-[#61b241]/30 to-black px-6 shadow-lg py-20 relative"> */}
+      <section className="bg-gradient-to-tr from-black to-[#61b241]/40 px-6 shadow-lg py-20 relative">
+        {/* <div className="bg-gradient-to-bl from-[#61b241]/30 via-[#61b241]/0 to-[#61b241]/0 absolute top-0 right-0 size-56 z-10"></div> */}
 
         <h2 className="text-4xl text-white font-bold mb-7 text-center">
           Kenapa Harus Gabung{" "}
@@ -168,89 +135,41 @@ export default function App() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div className="p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border-2 border-white/10 relative overflow-hidden">
-            <div className="flex flex-col gap-3">
-              <h3 className="font-sans text-white font-medium text-2xl/[120%]">
-                Design
-              </h3>
-              <p className="text-sm/[140%] font-sans text-white/50">
-                Setelah dasar-dasarnya jelas, ide-ide ini diwujudkan dalam
-                bentuk modul dan desain yang berbeda, yang dipadukan dengan
-                keahlian UI/UX.
-              </p>
-            </div>
-          </div>
-          <div className="p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border-2 border-white/10 relative overflow-hidden">
-            <div className="flex flex-col gap-3">
-              <h3 className="font-sans text-white font-medium text-2xl/[120%]">
-                Design
-              </h3>
-              <p className="text-sm/[140%] font-sans text-white/50">
-                Setelah dasar-dasarnya jelas, ide-ide ini diwujudkan dalam
-                bentuk modul dan desain yang berbeda, yang dipadukan dengan
-                keahlian UI/UX.
-              </p>
-            </div>
-          </div>
-          <div className="p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border-2 border-white/10 relative overflow-hidden">
-            <div className="flex flex-col gap-3">
-              <h3 className="font-sans text-white font-medium text-2xl/[120%]">
-                Design
-              </h3>
-              <p className="text-sm/[140%] font-sans text-white/50">
-                Setelah dasar-dasarnya jelas, ide-ide ini diwujudkan dalam
-                bentuk modul dan desain yang berbeda, yang dipadukan dengan
-                keahlian UI/UX.
-              </p>
-            </div>
-          </div>
-          <div className="p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border-2 border-white/10 relative overflow-hidden">
-            <div className="flex flex-col gap-3">
-              <h3 className="font-sans text-white font-medium text-2xl/[120%]">
-                Design
-              </h3>
-              <p className="text-sm/[140%] font-sans text-white/50">
-                Setelah dasar-dasarnya jelas, ide-ide ini diwujudkan dalam
-                bentuk modul dan desain yang berbeda, yang dipadukan dengan
-                keahlian UI/UX.
-              </p>
-            </div>
-          </div>
-          <div className="p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border-2 border-white/10 relative overflow-hidden">
-            <div className="flex flex-col gap-3">
-              <h3 className="font-sans text-white font-medium text-2xl/[120%]">
-                Design
-              </h3>
-              <p className="text-sm/[140%] font-sans text-white/50">
-                Setelah dasar-dasarnya jelas, ide-ide ini diwujudkan dalam
-                bentuk modul dan desain yang berbeda, yang dipadukan dengan
-                keahlian UI/UX.
-              </p>
-            </div>
-          </div>
-          <div className="p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border-2 border-white/10 relative overflow-hidden">
-            <div className="flex flex-col gap-3">
-              <h3 className="font-sans text-white font-medium text-2xl/[120%]">
-                Design
-              </h3>
-              <p className="text-sm/[140%] font-sans text-white/50">
-                Setelah dasar-dasarnya jelas, ide-ide ini diwujudkan dalam
-                bentuk modul dan desain yang berbeda, yang dipadukan dengan
-                keahlian UI/UX.
-              </p>
-            </div>
-          </div>
+          <WhyChooseCard
+            title="Modal Murah"
+            desc="Jualan jadi makin gampang karena kamu punya modal harga termurah!"
+          />
+          <WhyChooseCard
+            title="Produk Super Lengkap"
+            desc="Top up, joki, akun game — semua tersedia nonstop tanpa batas waktu!"
+          />
+          <WhyChooseCard
+            title="Sistem Anti Ribet"
+            desc="Cukup HP & internet, langsung bisa jalanin bisnis — kami siap bantu dari awal sampai cuan!"
+          />
+          <WhyChooseCard
+            title="Layanan 24 Jam"
+            desc="Bisa mulai dari Rp0 dengan sistem dropship. Gak harus stok barang, tapi tetap bisa untung besar!"
+          />
+          <WhyChooseCard
+            title="Bisa Dimulai dari Nol"
+            desc="Bisa mulai dari Rp0 dengan sistem dropship. Gak harus stok barang, tapi tetap bisa untung besar!"
+          />
+          <WhyChooseCard
+            title="Sudah Terpercaya"
+            desc="Kamu gak sendiri — kami punya komunitas besar yang saling support dan tumbuh bareng!"
+          />
         </div>
       </section>
 
       <section className="px-6 bg-gradient-to-r from-[#61b241] to-emerald-600 py-12 bg-fixed">
         <div className="container mx-auto flex items-center justify-between">
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">
+            <h2 className="text-2xl font-bold text-white">
               Siap Gapai 100 Juta Pertama dari Game?
             </h2>
-            <p className="text-gray-200">
-              Klik tombol di bawah untuk daftar jadi Mitra Aoshi dan mulai
+            <p className="text-gray-100">
+              Klik tombol di Samping untuk daftar jadi Mitra Aoshi dan mulai
               bisnismu hari ini!
             </p>
           </div>
