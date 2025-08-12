@@ -1,5 +1,6 @@
 import { OurServiceCard, WhyChooseCard } from "./components/Card";
 import Navbar from "./components/Navbar";
+import FAQAccordion from "./sections/FAQ";
 
 export default function App() {
   return (
@@ -119,46 +120,110 @@ export default function App() {
       {/*  */}
 
       {/* <section className="bg-gradient-to-tr from-black via-[#61b241]/30 to-black px-6 shadow-lg py-20 relative"> */}
-      <section className="bg-gradient-to-tr from-black to-[#61b241]/40 px-6 shadow-lg py-20 relative">
-        {/* <div className="bg-gradient-to-bl from-[#61b241]/30 via-[#61b241]/0 to-[#61b241]/0 absolute top-0 right-0 size-56 z-10"></div> */}
+      <section className="bg-gradient-to-tr from-black to-[#61b241]/40 px-6 shadow-lg py-20 relative ">
+        <div className="container mx-auto">
+          {/* <div className="bg-gradient-to-bl from-[#61b241]/30 via-[#61b241]/0 to-[#61b241]/0 absolute top-0 right-0 size-56 z-10"></div> */}
 
-        <h2 className="text-4xl text-white font-bold mb-7 text-center">
-          Kenapa Harus Gabung{" "}
-          <span className="bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl">
-            Mitra Aoshi?
-          </span>
-        </h2>
-        <p className="max-w-3xl mx-auto text-center text-gray-200 mb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis
-          voluptatum quo earum ad autem. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Aut, veniam!
-        </p>
+          <h2 className="text-4xl text-white font-bold mb-3 text-center">
+            Kenapa Harus Gabung{" "}
+            <span className="bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl">
+              Mitra Aoshi?
+            </span>
+          </h2>
+          <p className="max-w-3xl mx-auto text-center text-gray-300 mb-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            debitis voluptatum quo earum ad autem. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Aut, veniam!
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <WhyChooseCard
-            title="Modal Murah"
-            desc="Jualan jadi makin gampang karena kamu punya modal harga termurah!"
-          />
-          <WhyChooseCard
-            title="Produk Super Lengkap"
-            desc="Top up, joki, akun game — semua tersedia nonstop tanpa batas waktu!"
-          />
-          <WhyChooseCard
-            title="Sistem Anti Ribet"
-            desc="Cukup HP & internet, langsung bisa jalanin bisnis — kami siap bantu dari awal sampai cuan!"
-          />
-          <WhyChooseCard
-            title="Layanan 24 Jam"
-            desc="Bisa mulai dari Rp0 dengan sistem dropship. Gak harus stok barang, tapi tetap bisa untung besar!"
-          />
-          <WhyChooseCard
-            title="Bisa Dimulai dari Nol"
-            desc="Bisa mulai dari Rp0 dengan sistem dropship. Gak harus stok barang, tapi tetap bisa untung besar!"
-          />
-          <WhyChooseCard
-            title="Sudah Terpercaya"
-            desc="Kamu gak sendiri — kami punya komunitas besar yang saling support dan tumbuh bareng!"
-          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <WhyChooseCard
+              title="Modal Murah"
+              desc="Jualan jadi makin gampang karena kamu punya modal harga termurah!"
+            />
+            <WhyChooseCard
+              title="Produk Super Lengkap"
+              desc="Top up, joki, akun game — semua tersedia nonstop tanpa batas waktu!"
+            />
+            <WhyChooseCard
+              title="Sistem Anti Ribet"
+              desc="Cukup HP & internet, langsung bisa jalanin bisnis — kami siap bantu dari awal sampai cuan!"
+            />
+            <WhyChooseCard
+              title="Layanan 24 Jam"
+              desc="Bisa mulai dari Rp0 dengan sistem dropship. Gak harus stok barang, tapi tetap bisa untung besar!"
+            />
+            <WhyChooseCard
+              title="Bisa Dimulai dari Nol"
+              desc="Bisa mulai dari Rp0 dengan sistem dropship. Gak harus stok barang, tapi tetap bisa untung besar!"
+            />
+            <WhyChooseCard
+              title="Sudah Terpercaya"
+              desc="Kamu gak sendiri — kami punya komunitas besar yang saling support dan tumbuh bareng!"
+            />
+          </div>
+        </div>
+      </section>
+
+      <FAQAccordion />
+
+      <section className="bg-gradient-to-tl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative">
+        {/* <section className="bg-gradient-to-tl from-black via-[#61b241]/30 to-black px-6 shadow-lg py-20 relative"> */}
+        <div>
+          <h2 className="text-4xl text-white font-bold mb-3 text-center">
+            Tahapan Bergabung dengan{" "}
+            <span className="bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl">
+              Mitra Aoshi!
+            </span>
+          </h2>
+          <p className="max-w-3xl mx-auto text-center text-gray-300 mb-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            debitis voluptatum quo earum ad autem. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Aut, veniam!
+          </p>
+        </div>
+        <div className="container relative mx-auto">
+          <div className="grid grid-cols-10 xl:grid-cols-11 gap-y-8">
+            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 p-10 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px]">
+              <h2 className="text-xl font-semibold -my-2">Step 1</h2>
+              <p className="text-white/50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                non distinctio,
+              </p>
+              <div className="absolute hidden top-0 border border-white/20 p-1.5 bg-white/10 rounded-full xl:flex items-center justify-center z-20 -right-[93px]">
+                <div className="h-14 w-14 flex items-center justify-center bg-[#61b241] rounded-full">
+                  1
+                </div>
+              </div>
+            </div>
+            <div className="xl:col-span-2 hidden xl:block"></div>
+            <div className="xl:col-span-2 hidden xl:block"></div>
+            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 p-10 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] xl:col-start-7">
+              <h2 className="text-xl font-semibold -my-2">Step 2</h2>
+              <p className="text-white/50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                non distinctio,
+              </p>
+              <div className="absolute hidden top-0 border border-white/20 p-1.5 bg-white/10 rounded-full xl:flex items-center justify-center z-20 -left-[93px]">
+                <div className="h-14 w-14 flex items-center justify-center bg-[#61b241] rounded-full">
+                  2
+                </div>
+              </div>
+            </div>
+            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 p-10 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px]">
+              <h2 className="text-xl font-semibold -my-2">Step 3</h2>
+              <p className="text-white/50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                non distinctio,
+              </p>
+              <div className="absolute hidden top-0 border border-white/20 p-1.5 bg-white/10 rounded-full xl:flex items-center justify-center z-20 -right-[93px]">
+                <div className="h-14 w-14 flex items-center justify-center bg-[#61b241] rounded-full">
+                  3
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-px h-full bg-white/20 absolute inset-y-0 right-1/2 -z-10 hidden xl:block"></div>
         </div>
       </section>
 

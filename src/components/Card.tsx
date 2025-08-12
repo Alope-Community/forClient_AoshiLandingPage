@@ -54,7 +54,10 @@ export function WhyChooseCard(props: WhyChooseCardCardProps) {
         <h3 className="font-sans text-white font-medium text-2xl/[120%]">
           {props.title}
         </h3>
-        <p className="text-sm/[140%] font-sans text-white/70">{props.desc}</p>
+        <p className="text-sm/[140%] font-sans text-white/70">
+          {props.desc}. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.
+        </p>
       </div>
     </div>
   );
