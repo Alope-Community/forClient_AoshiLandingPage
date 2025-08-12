@@ -2,6 +2,20 @@ import { OurServiceCard, WhyChooseCard } from "./components/Card";
 import Navbar from "./components/Navbar";
 import FAQAccordion from "./sections/FAQ";
 
+import { Tilt } from "react-tilt";
+
+const defaultOptions = {
+  reverse: false,
+  max: 25, // max tilt rotation (degrees)
+  perspective: 1000,
+  scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+  speed: 1000,
+  transition: true,
+  axis: null,
+  reset: false,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+};
+
 export default function App() {
   return (
     <>
@@ -34,41 +48,47 @@ export default function App() {
             </div>
           </div>
 
-          <div className="md:w-2/5 rounded-xl overflow-hidden">
-            <div className="flex space-x-1 bg-gradient-to-l from-[#61b241] to-emerald-600 p-5 text-xs font-semibold text-black">
-              <div className="rounded-full w-3 h-3 bg-white"></div>
-              <div className="rounded-full w-3 h-3 bg-white"></div>
-              <div className="rounded-full w-3 h-3 bg-white"></div>
-            </div>
-            <div className="px-4 py-6 space-y-5 backdrop-blur-lg bg-white/10 border border-[#47593d] rounded-b-xl shadow">
-              <div className="grid grid-cols-3 gap-5">
-                <img
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d26d692-b535-4044-8bab-a7e6dccb2d7e.png"
-                  alt="Cover art of Free Fire game with bright and action-packed illustration"
-                  className="rounded-lg shadow-lg flex-1/3"
-                />
-                <img
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d1007f0b-fd2b-45ec-834c-2b6b00a10138.png"
-                  alt="Cover art of Honor of Kings game featuring a female warrior in fantasy setting"
-                  className="rounded-lg shadow-lg flex-1/3"
-                />
-                <img
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/69c2ddfb-f9f4-4af0-9ed5-fd9236f2629a.png"
-                  alt="Cover art of Free Fire game with survival and combat theme characters"
-                  className="rounded-lg shadow-lg"
-                />
+          <div className="md:w-2/5 ">
+            <Tilt options={defaultOptions}>
+              <div className="rounded-xl overflow-hidden">
+                <div className="flex space-x-1 bg-gradient-to-l from-[#61b241] to-emerald-600 p-5 text-xs font-semibold text-black">
+                  <div className="rounded-full w-3 h-3 bg-white"></div>
+                  <div className="rounded-full w-3 h-3 bg-white"></div>
+                  <div className="rounded-full w-3 h-3 bg-white"></div>
+                </div>
+                <div className="px-4 py-6 space-y-5 backdrop-blur-lg bg-white/10 border border-[#47593d] rounded-b-xl shadow">
+                  <div className="grid grid-cols-3 gap-5">
+                    <img
+                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d26d692-b535-4044-8bab-a7e6dccb2d7e.png"
+                      alt="Cover art of Free Fire game with bright and action-packed illustration"
+                      className="rounded-lg shadow-lg flex-1/3"
+                    />
+                    <img
+                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d1007f0b-fd2b-45ec-834c-2b6b00a10138.png"
+                      alt="Cover art of Honor of Kings game featuring a female warrior in fantasy setting"
+                      className="rounded-lg shadow-lg flex-1/3"
+                    />
+                    <img
+                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/69c2ddfb-f9f4-4af0-9ed5-fd9236f2629a.png"
+                      alt="Cover art of Free Fire game with survival and combat theme characters"
+                      className="rounded-lg shadow-lg"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <p className="text-gray-100 text-2xl font-bold">
+                      Service Kami
+                    </p>
+                    <p className="text-gray-300 mb-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, officiis. Temporibus, assumenda nam asperiores,
+                    </p>
+                    <button className="bg-[#61b241] text-white px-6 py-2 rounded-full font-semibold hover:bg-red-[#61b241]/90 transition">
+                      Lihat Semua
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div className="text-center">
-                <p className="text-gray-100 text-2xl font-bold">Service Kami</p>
-                <p className="text-gray-300 mb-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore, officiis. Temporibus, assumenda nam asperiores,
-                </p>
-                <button className="bg-[#61b241] text-white px-6 py-2 rounded-full font-semibold hover:bg-red-[#61b241]/90 transition">
-                  Lihat Semua
-                </button>
-              </div>
-            </div>
+            </Tilt>
           </div>
         </div>
       </header>
