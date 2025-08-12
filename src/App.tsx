@@ -90,9 +90,9 @@ export default function App() {
       {/* <section className="py-20 bg-gradient-to-br from-black via-[#61b241]/20 to-black relative"> */}
       <section className="py-20 bg-gradient-to-br from-black to-[#61b241]/40 relative">
         <div className="container mx-auto">
-          {/* <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3 py-2 rounded-full border border-[#61b241] text-sm font-semibold">
+          <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3 py-2 rounded-full border border-[#61b241] text-sm font-semibold">
             Mitra Aoshi
-          </span> */}
+          </span>
           <h3 className="text-4xl mt-5">
             Membuka peluang untuk kamu yang ingin{" "}
             <span className="block bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl">
@@ -121,10 +121,13 @@ export default function App() {
 
       {/* <section className="bg-gradient-to-tr from-black via-[#61b241]/30 to-black px-6 shadow-lg py-20 relative"> */}
       <section className="bg-gradient-to-tr from-black to-[#61b241]/40 px-6 shadow-lg py-20 relative ">
-        <div className="container mx-auto">
+        <div className="container mx-auto text-center">
           {/* <div className="bg-gradient-to-bl from-[#61b241]/30 via-[#61b241]/0 to-[#61b241]/0 absolute top-0 right-0 size-56 z-10"></div> */}
 
-          <h2 className="text-4xl text-white font-bold mb-3 text-center">
+          <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3.5 py-2 rounded-full border border-[#61b241] text-sm font-semibold">
+            Why Us?
+          </span>
+          <h2 className="text-4xl text-white font-bold mb-3 mt-5 text-center">
             Kenapa Harus Gabung{" "}
             <span className="bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl">
               Mitra Aoshi?
@@ -167,10 +170,13 @@ export default function App() {
 
       <FAQAccordion />
 
-      <section className="bg-gradient-to-tl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative">
+      <section className="bg-gradient-to-tl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative text-center">
         {/* <section className="bg-gradient-to-tl from-black via-[#61b241]/30 to-black px-6 shadow-lg py-20 relative"> */}
+        <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3.5 py-2 rounded-full border border-[#61b241] text-xs font-semibold">
+          Lets Join
+        </span>
         <div>
-          <h2 className="text-4xl text-white font-bold mb-3 text-center">
+          <h2 className="text-4xl text-white font-bold mb-3 mt-5 text-center">
             Tahapan Bergabung dengan{" "}
             <span className="bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl">
               Mitra Aoshi!

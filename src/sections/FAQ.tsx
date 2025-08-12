@@ -28,6 +28,9 @@ export default function FAQAccordion() {
     <section className="bg-gradient-to-bl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative">
       <div className="container mx-auto grid grid-cols-2">
         <div>
+          <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3.5 py-2 rounded-full border border-[#61b241] text-xs font-semibold">
+            FAQs
+          </span>
           <h2 className="text-4xl text-white font-bold mt-5">
             Apa yang Sering Ditanyakan <br />
             <span className="bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl mt-2 block">
