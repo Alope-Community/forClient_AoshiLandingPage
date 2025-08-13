@@ -25,7 +25,10 @@ export default function FAQAccordion() {
   };
 
   return (
-    <section className="bg-gradient-to-bl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative">
+    <section
+      id="faq"
+      className="bg-gradient-to-bl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative"
+    >
       <div className="container mx-auto grid grid-cols-2">
         <div>
           <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3.5 py-2 rounded-full border border-[#61b241] text-xs font-semibold">

@@ -97,7 +97,7 @@ export default function App() {
         <div className="flex container mx-auto justify-between items-center">
           <p className="text-gray-100 w-1/2">
             Populasi gamers di Indonesia diperkirakan mencapai <b>19 juta</b>{" "}
-            orang pada tahun 2025. <br /> Jangan cuma jadi penonton — saatnya
+            orang pada tahun 2025. <br /> Jangan cuma jadi penonton, saatnya
             kamu ambil bagian dan cuan dari industri game yang terus tumbuh
             pesat!
           </p>
@@ -108,7 +108,10 @@ export default function App() {
       </section>
 
       {/* <section className="py-20 bg-gradient-to-br from-black via-[#61b241]/20 to-black relative"> */}
-      <section className="py-20 bg-gradient-to-br from-black to-[#61b241]/40 relative">
+      <section
+        id="mitra"
+        className="py-20 bg-gradient-to-br from-black to-[#61b241]/40 relative"
+      >
         <div className="container mx-auto">
           <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3 py-2 rounded-full border border-[#61b241] text-sm font-semibold">
             Mitra Aoshi
@@ -190,7 +193,10 @@ export default function App() {
 
       <FAQAccordion />
 
-      <section className="bg-gradient-to-tl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative text-center">
+      <section
+        id="stepJoin"
+        className="bg-gradient-to-tl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative text-center"
+      >
         {/* <section className="bg-gradient-to-tl from-black via-[#61b241]/30 to-black px-6 shadow-lg py-20 relative"> */}
         <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3.5 py-2 rounded-full border border-[#61b241] text-xs font-semibold">
           Lets Join

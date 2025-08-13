@@ -2,7 +2,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className="fixed top-0 left-0 w-full bg-gradient-to-b from-black/90 to-black/40 backdrop-blur-md z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <div className="container mx-auto flex items-center justify-between px-6 py-4">
           <a
             href="#"
             className="flex items-center space-x-2 font-extrabold text-xl select-none"
@@ -15,31 +15,31 @@ export default function Navbar() {
             <span>Aoshi</span>
           </a>
           <nav>
-            <ul className="flex space-x-6 text-sm font-medium">
+            <ul className="flex space-x-6 items-center text-sm font-medium">
               <li>
-                <a href="#produk" className="hover:text-red-600 transition">
-                  Produk
+                <a href="#" className="hover:text-[#61b241] transition">
+                  Beranda
                 </a>
               </li>
               <li>
-                <a href="#tahapan" className="hover:text-red-600 transition">
-                  Tahapan
+                <a href="#mitra" className="hover:text-[#61b241] transition">
+                  Mulai Bisnis
                 </a>
               </li>
               <li>
-                <a href="#fitur" className="hover:text-red-600 transition">
-                  Fitur
+                <a href="#faq" className="hover:text-[#61b241] transition">
+                  FAQ
                 </a>
               </li>
               <li>
-                <a href="#harga" className="hover:text-red-600 transition">
-                  Harga
+                <a href="#stepJoin" className="hover:text-[#61b241] transition">
+                  Tahapan gabung
                 </a>
               </li>
               <li>
-                <a href="#kontak" className="hover:text-red-600 transition">
-                  Kontak
-                </a>
+                <button className="bg-gradient-to-r from-[#61b241] to-emerald-600 hover:bg-gradient-to-l text-white px-6 py-2 rounded-full font-semibold hover:bg-red-[#61b241]/90 transition cursor-pointer">
+                  Gabung
+                </button>
               </li>
             </ul>
           </nav>
