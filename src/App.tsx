@@ -23,7 +23,7 @@ export default function App() {
 
       {/* <header className="min-h-screen bg-[repeating-radial-gradient(circle_at_center,rgba(97,178,65,0.1),rgba(97,178,65,0.1)_20px,transparent_200px,transparent_100px)]"> */}
       <header className="py-20 bg-gradient-to-b from-black via-[#61b241]/30 to-black relative">
-        <div className="container relative pt-32 pb-20 mx-auto px-6 flex flex-col md:flex-row items-center gap-12 w-full p-8">
+        <div className="container relative pt-32 pb-20 mx-auto flex flex-col md:flex-row items-center gap-12 w-full">
           <div className="md:w-3/5 space-y-6">
             <p className="text-gray-100 text-2xl mb-0">
               Ingin punya penghasilan dari dunia game?
