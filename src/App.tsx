@@ -2,7 +2,7 @@ import { Dumbbell, Gem, ShoppingBasket } from "lucide-react";
 import Badge from "./components/Badge";
 import { OurServiceCard, WhyChooseCard } from "./components/Card";
 import Navbar from "./components/Navbar";
-import FAQAccordion from "./sections/FAQ";
+import FAQAccordion from "./sections/FAQ/FAQ";
 
 import Header from "./sections/Header/Header";
 

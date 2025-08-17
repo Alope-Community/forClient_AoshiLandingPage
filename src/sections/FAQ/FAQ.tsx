@@ -101,8 +101,8 @@ export default function FAQAccordion() {
       id="faq"
       className="bg-gradient-to-bl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative"
     >
-      <div className="container mx-auto grid grid-cols-2">
-        <div>
+      <div className="container mx-auto grid md:grid-cols-2">
+        <div className="md:mb-0 mb-10 text-center md:text-left">
           <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3.5 py-2 rounded-full border border-[#61b241] text-xs font-semibold">
             FAQs
           </span>
