@@ -1,3 +1,5 @@
+import { Dumbbell, Gem, ShoppingBasket } from "lucide-react";
+import Badge from "./components/Badge";
 import { OurServiceCard, WhyChooseCard } from "./components/Card";
 import Navbar from "./components/Navbar";
 import FAQAccordion from "./sections/FAQ";
@@ -15,7 +17,7 @@ export default function App() {
 
       <section className="mx-auto px-6 bg-gradient-to-r from-[#61b241] to-emerald-600 py-10">
         <div className="flex container mx-auto justify-between items-center">
-          <p className="text-gray-100 w-1/2">
+          <p className="text-gray-100 md:w-1/2 w-full md:text-left text-center">
             Populasi gamers di Indonesia diperkirakan mencapai <b>19 juta</b>{" "}
             orang pada tahun 2025. <br /> Jangan cuma jadi penonton, saatnya
             kamu ambil bagian dan cuan dari industri game yang terus tumbuh
@@ -30,29 +32,30 @@ export default function App() {
       {/* <section className="py-20 bg-gradient-to-br from-black via-[#61b241]/20 to-black relative"> */}
       <section
         id="mitra"
-        className="py-20 bg-gradient-to-br from-black to-[#61b241]/40 relative"
+        className="py-20 bg-gradient-to-br from-black to-[#61b241]/40 relative lg:px-0 px-5"
       >
-        <div className="container mx-auto">
-          <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3 py-2 rounded-full border border-[#61b241] text-sm font-semibold">
-            Mitra Aoshi
-          </span>
-          <h3 className="text-4xl mt-5">
+        <div className="container mx-auto md:text-left text-center">
+          <Badge text="Mitra Aoshi" />
+          <h3 className="text-4xl mt-5 md:text-left text-center">
             Membuka peluang untuk kamu yang ingin{" "}
             <span className="block bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-4xl">
               Memulai Bisnis!
             </span>
           </h3>
 
-          <div className="grid grid-cols-3 gap-10 mt-10">
+          <div className="grid md:grid-cols-3 gap-10 mt-10 text-left">
             <OurServiceCard
+              icon={<Gem />}
               title="Top Up All Games Termurah"
               desc="Kami menyediakan jasa top up modal termurah Seindonesia. Buka 24 jam nonstop. Proses super kilat, kurang dari 1 detik"
             />
             <OurServiceCard
+              icon={<Dumbbell />}
               title="Joki MLBB Terpercaya"
               desc="Tingkatkan rank Mobile Legends kamu dengan cepat dan aman bersama tim joki profesional. 100% aman, rahasia terjaga, dan harga terjangkau!"
             />
             <OurServiceCard
+              icon={<ShoppingBasket />}
               title="Jual Akun Game"
               desc="Kami menyediakan akun termurah yang bisa kalian jual kembali dengan margin tinggi hingga 100%. Semua akun bergaransi seumur hidup. Akun terjamin anti hackback"
             />
