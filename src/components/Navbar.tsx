@@ -8,11 +8,11 @@ export default function Navbar() {
             className="flex items-center space-x-2 font-extrabold text-xl select-none"
           >
             <img
-              src="./images/logo.jpeg"
+              src="./images/whiteLogo.png"
               alt="Aothis Logo"
               className="w-12 rounded-full"
             />
-            <span>Aoshi</span>
+            <span>Mitra Aoshi</span>
           </a>
           <nav>
             <ul className="flex space-x-6 items-center text-sm font-medium">
@@ -37,9 +37,13 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <button className="bg-gradient-to-r from-[#61b241] to-emerald-600 hover:bg-gradient-to-l text-white px-6 py-2 rounded-full font-semibold hover:bg-red-[#61b241]/90 transition cursor-pointer">
+                <a
+                  href="https://wa.me/6289638442070"
+                  target="_blank"
+                  className="bg-gradient-to-r from-[#61b241] to-emerald-600 hover:bg-gradient-to-l text-white px-6 py-2 rounded-full font-semibold hover:bg-red-[#61b241]/90 transition cursor-pointer"
+                >
                   Gabung
-                </button>
+                </a>
               </li>
             </ul>
           </nav>
