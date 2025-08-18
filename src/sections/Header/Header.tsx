@@ -18,7 +18,7 @@ export default function Header() {
       <div className="container relative pt-32 pb-20 mx-auto flex flex-col md:flex-row items-center gap-12 w-full">
         <div className="w-full md:w-3/5 space-y-6 md:order-1 order-2 md:text-left text-center">
           <p className="text-gray-100 text-2xl mb-0">
-            Ingin punya penghasilan dari dunia game?
+            Ingin punya penghasilan dari game?
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
             Saatnya jadi bagian dari <br />{" "}
@@ -36,7 +36,7 @@ export default function Header() {
               target="_blank"
               className="bg-[#61b241] px-6 py-3 rounded-md text-white font-semibold hover:bg-[#61b241]/90 transition duration-300"
             >
-              Daftar Reseller
+              Daftar Mitra Aoshi
             </a>
           </div>
         </div>

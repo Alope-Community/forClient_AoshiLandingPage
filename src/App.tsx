@@ -52,12 +52,12 @@ export default function App() {
             <OurServiceCard
               icon={<Dumbbell />}
               title="Joki MLBB Terpercaya"
-              desc="Tingkatkan rank Mobile Legends kamu dengan cepat dan aman bersama tim joki profesional. 100% aman, rahasia terjaga, dan harga terjangkau!"
+              desc="Kami menyediakan jasa joki mobile legends termurah Seindonesia Buka 24 jam nonstop Proses joki dikerjakan oleh pro player dan penjoki profesional dengan pengalaman lebih dari 5 tahun Garansi Full Winstreak"
             />
             <OurServiceCard
               icon={<ShoppingBasket />}
               title="Jual Akun Game"
-              desc="Kami menyediakan akun termurah yang bisa kalian jual kembali dengan margin tinggi hingga 100%. Semua akun bergaransi seumur hidup. Akun terjamin anti hackback"
+              desc="Kami menyediakan akun termurah yang bisa kalian jual kembali dengan margin tinggi hingga 100%. Tersedia akun MLBB,FF,PUBGM,ROBLOX,EFOOTBALL & game populer lainnya. Buka 24 jam nonstop. Semua akun bergaransi seumur hidup. Akun terjamin anti hackback"
             />
           </div>
         </div>
@@ -90,14 +90,14 @@ export default function App() {
             />
             <WhyChooseCard
               title="Produk Super Lengkap"
-              desc="Top up, joki, akun game — semua tersedia nonstop tanpa batas waktu!"
+              desc="Top up, joki, akun game, semua tersedia nonstop tanpa batas waktu!"
             />
             <WhyChooseCard
               title="Sistem Anti Ribet"
-              desc="Cukup HP & internet, langsung bisa jalanin bisnis — kami siap bantu dari awal sampai cuan!"
+              desc="Cukup HP & internet, langsung bisa jalanin bisnis, kami siap bantu dari awal sampai cuan!"
             />
             <WhyChooseCard
-              title="Layanan 24 Jam"
+              title="Layanan 24 Jam Nonstop"
               desc="Kami siap melayani kamu setiap hari tanpa henti! Fast respon , pelayanan ramah , dan selalu siap membantu kapan pun kamu butuh."
             />
             <WhyChooseCard
@@ -105,8 +105,8 @@ export default function App() {
               desc="Bisa mulai dari Rp0 dengan sistem dropship. Gak harus stok barang, tapi tetap bisa untung besar!"
             />
             <WhyChooseCard
-              title="Sudah Terpercaya"
-              desc="Kamu gak sendiri — kami punya komunitas besar yang saling support dan tumbuh bareng!"
+              title="Sudah Dipercaya Ribuan Reseller Aktif"
+              desc="Kamu gak sendiri, kami punya komunitas besar yang saling support dan tumbuh bareng!"
             />
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function App() {
             </span>
           </h2>
           <p className="max-w-3xl mx-auto text-center text-gray-300 mb-10">
-            Berikut cara bergabung Reseller Aoshi!
+            Berikut cara bergabung Mitra Aoshi
           </p>
         </div>
         <div className="container relative mx-auto">
@@ -139,9 +139,17 @@ export default function App() {
               <h2 className="text-xl font-semibold -my-2">
                 Klik Bergabung & hubungi admin via WhatsApp
               </h2>
-              <p className="text-white/50">
-                Tekan tombol “Bergabung” lalu langsung terhubung dengan admin
-                melalui WhatsApp untuk memulai proses.
+              <p className="text-white/50 leading-8">
+                Tekan tombol{" "}
+                <a
+                  href="https://wa.me/6289638442070"
+                  target="_blank"
+                  className="bg-gradient-to-r from-[#61b241] to-emerald-600 hover:bg-gradient-to-l px-2 py-1.5 rounded-md text-white hover:bg-[#61b241]/90 transition duration-300 mx-2"
+                >
+                  Bergabung
+                </a>
+                lalu langsung terhubung dengan admin melalui WhatsApp untuk
+                memulai proses.
               </p>
               <div className="absolute hidden top-0 border border-white/20 p-1.5 bg-white/10 rounded-full xl:flex items-center justify-center z-20 -right-[93px]">
                 <div className="h-14 w-14 flex items-center justify-center bg-[#61b241] rounded-full">
@@ -202,8 +210,8 @@ export default function App() {
       </section>
 
       <section className="px-6 bg-gradient-to-r from-[#61b241] to-emerald-600 py-12 bg-fixed">
-        <div className="container mx-auto flex items-center justify-between">
-          <div>
+        <div className="container mx-auto flex md:flex-row flex-col items-center justify-between">
+          <div className="text-center md:text-left mb-10 md:mb-0">
             <h2 className="text-2xl font-bold text-white">
               Siap Gapai 100 Juta Pertama dari Game?
             </h2>
@@ -231,7 +239,7 @@ export default function App() {
               Mitra Aoshi
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Mitra Aoshi adalah platform reseller voucher game,joki & akun
+              Mitra Aoshi adalah platform reseller voucher game, joki & akun
               terpercaya yang menyediakan produk gaming lengkap untuk menunjang
               bisnis Anda. Tanpa modal kamu sudah bisa memulai bisnis !
             </p>
