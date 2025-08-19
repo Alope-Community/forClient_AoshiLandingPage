@@ -112,11 +112,9 @@ export default function App() {
         </div>
       </section>
 
-      <FAQAccordion />
-
       <section
         id="stepJoin"
-        className="bg-gradient-to-tl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative text-center"
+        className="bg-gradient-to-bl from-black to-[#61b241]/30 px-6 shadow-lg py-20 relative text-center"
       >
         {/* <section className="bg-gradient-to-tl from-black via-[#61b241]/30 to-black px-6 shadow-lg py-20 relative"> */}
         <span className="bg-gradient-to-r from-[#61b241]/30 to-emerald-600/30 px-3.5 py-2 rounded-full border border-[#61b241] text-xs font-semibold">
@@ -209,6 +207,8 @@ export default function App() {
         </div>
       </section>
 
+      <FAQAccordion />
+
       <section className="px-6 bg-gradient-to-r from-[#61b241] to-emerald-600 py-12 bg-fixed">
         <div className="container mx-auto flex md:flex-row flex-col items-center justify-between">
           <div className="text-center md:text-left mb-10 md:mb-0">
@@ -216,8 +216,9 @@ export default function App() {
               Siap Gapai 100 Juta Pertama dari Game?
             </h2>
             <p className="text-gray-100">
-              Klik tombol di Samping untuk daftar jadi Mitra Aoshi dan mulai
-              bisnismu hari ini!
+              Klik tombol di <span className="md:inline hidden">Samping</span>{" "}
+              <span className="md:hidden inline">Bawah</span> untuk daftar jadi
+              Mitra Aoshi dan mulai bisnismu hari ini!
             </p>
           </div>
           <div>
