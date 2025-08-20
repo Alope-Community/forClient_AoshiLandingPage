@@ -26,7 +26,7 @@ export default function HeaderServices() {
           />
         </div>
         <div className="text-center mb-2">
-          <p className="text-gray-100 text-2xl font-bold">Layanan Kami</p>
+          <p className="text-gray-100 text-2xl font-bold mb-2">Layanan Kami</p>
           <p className="text-gray-300 mb-5">
             Top Up all game termurah 24 jam, Joki MLBB terpercaya & aman, serta
             jual akun bergaransi seumur hidup.

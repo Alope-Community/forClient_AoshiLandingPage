@@ -3,12 +3,15 @@ import type { ReactNode } from "react";
 type OurServiceCardProps = {
   title: string;
   desc: string;
+  customClass?: string;
   icon: ReactNode;
 };
 
 export function OurServiceCard(props: OurServiceCardProps) {
   return (
-    <div className="p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border border-white/5 relative overflow-hidden">
+    <div
+      className={`p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border border-white/5 relative overflow-hidden ${props.customClass}`}
+    >
       <div>
         <div className="size-[72px] rounded-[20px] ring-1 ring-white/10 [background:linear-gradient(180deg,_rgba(255,_255,_255,_0.10)_0%,_rgba(255,_255,_255,_0.00)_100%)] bg-center">
           <div className="bg-gradient-to-r from-[#61b241]/40 to-emerald-600/40 rounded-[20px] h-full w-full flex items-center justify-center border border-[#61b241]">
@@ -23,7 +26,6 @@ export function OurServiceCard(props: OurServiceCardProps) {
         <p className="text-sm/[140%] font-sans text-white/70">{props.desc}</p>
       </div>
 
-      {/* <div className="bg-gradient-to-tl from-[#61b241]/70 via-[#61b241]/0 to-[#61b241]/0 absolute bottom-0 right-0 size-28"></div> */}
       <div className="border-t border-r border-[#61b241]/70 rounded-tr-3xl absolute top-0 right-0 size-7"></div>
       <div className="border-t border-l border-[#61b241]/70 rounded-tl-3xl absolute top-0 left-0 size-7"></div>
       <div className="border-b border-l border-[#61b241]/70 rounded-bl-3xl absolute bottom-0 left-0 size-7"></div>

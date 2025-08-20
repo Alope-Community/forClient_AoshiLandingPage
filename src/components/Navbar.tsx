@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className="fixed top-0 left-0 w-full bg-gradient-to-b from-black/90 to-black/40 backdrop-blur-md z-50">
-        <div className="container mx-auto flex items-center justify-between py-4">
+        <div className="container mx-auto flex items-center justify-between py-4 xl:px-0 lg:px-8 px-5">
           {/* Logo */}
           <a
             href="#"
