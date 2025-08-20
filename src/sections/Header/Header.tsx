@@ -1,10 +1,10 @@
 import { Tilt } from "react-tilt";
-import HeaderDots from "./partials/dots";
+import HeaderServices from "./partials/services";
 const defaultOptions = {
   reverse: false,
-  max: 25, // max tilt rotation (degrees)
+  max: 15, // max tilt rotation (degrees)
   perspective: 1000,
-  scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+  scale: 1, // 2 = 200%, 1.5 = 150%, etc..
   speed: 1000,
   transition: true,
   axis: null,
@@ -44,87 +44,11 @@ export default function Header() {
         <div className="md:w-2/5 md:order-2 order-1">
           <div className="md:block hidden">
             <Tilt options={defaultOptions}>
-              <div className="rounded-xl overflow-hidden">
-                <div className="flex space-x-1 bg-gradient-to-l from-[#61b241] to-emerald-600 p-5 text-xs font-semibold text-black">
-                  <HeaderDots />
-                </div>
-                <div className="px-4 py-6 space-y-5 backdrop-blur-lg bg-white/10 border border-[#47593d] rounded-b-xl shadow">
-                  <div className="grid grid-cols-3 gap-5">
-                    <img
-                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d26d692-b535-4044-8bab-a7e6dccb2d7e.png"
-                      alt="Cover art of Free Fire game with bright and action-packed illustration"
-                      className="rounded-lg shadow-lg flex-1/3"
-                    />
-                    <img
-                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d1007f0b-fd2b-45ec-834c-2b6b00a10138.png"
-                      alt="Cover art of Honor of Kings game featuring a female warrior in fantasy setting"
-                      className="rounded-lg shadow-lg flex-1/3"
-                    />
-                    <img
-                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/69c2ddfb-f9f4-4af0-9ed5-fd9236f2629a.png"
-                      alt="Cover art of Free Fire game with survival and combat theme characters"
-                      className="rounded-lg shadow-lg"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <p className="text-gray-100 text-2xl font-bold">
-                      Layanan Kami
-                    </p>
-                    <p className="text-gray-300 mb-5">
-                      Top Up all game termurah 24 jam, Joki MLBB terpercaya &
-                      aman, serta jual akun bergaransi seumur hidup.
-                    </p>
-                    <a
-                      href="#mitra"
-                      className="bg-[#61b241] text-white px-6 py-2 rounded-full font-semibold hover:bg-red-[#61b241]/90 transition"
-                    >
-                      Lihat Semua
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <HeaderServices />
             </Tilt>
           </div>
           <div className="md:hidden block">
-            <div className="rounded-xl overflow-hidden">
-              <div className="flex space-x-1 bg-gradient-to-l from-[#61b241] to-emerald-600 p-5 text-xs font-semibold text-black">
-                <HeaderDots />
-              </div>
-              <div className="px-4 py-6 space-y-5 backdrop-blur-lg bg-white/10 border border-[#47593d] rounded-b-xl shadow">
-                <div className="grid grid-cols-3 gap-5">
-                  <img
-                    src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d26d692-b535-4044-8bab-a7e6dccb2d7e.png"
-                    alt="Cover art of Free Fire game with bright and action-packed illustration"
-                    className="rounded-lg shadow-lg flex-1/3"
-                  />
-                  <img
-                    src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d1007f0b-fd2b-45ec-834c-2b6b00a10138.png"
-                    alt="Cover art of Honor of Kings game featuring a female warrior in fantasy setting"
-                    className="rounded-lg shadow-lg flex-1/3"
-                  />
-                  <img
-                    src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/69c2ddfb-f9f4-4af0-9ed5-fd9236f2629a.png"
-                    alt="Cover art of Free Fire game with survival and combat theme characters"
-                    className="rounded-lg shadow-lg"
-                  />
-                </div>
-                <div className="text-center">
-                  <p className="text-gray-100 text-2xl font-bold">
-                    Layanan Kami
-                  </p>
-                  <p className="text-gray-300 mb-5">
-                    Top Up all game termurah 24 jam, Joki MLBB terpercaya &
-                    aman, serta jual akun bergaransi seumur hidup.
-                  </p>
-                  <a
-                    href="#mitra"
-                    className="bg-[#61b241] text-white px-6 py-2 rounded-full font-semibold hover:bg-red-[#61b241]/90 transition"
-                  >
-                    Lihat Semua
-                  </a>
-                </div>
-              </div>
-            </div>
+            <HeaderServices />
           </div>
         </div>
       </div>
