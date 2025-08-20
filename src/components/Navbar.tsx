@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Button from "./Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,13 +46,7 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a
-                href="https://wa.me/6289638442070"
-                target="_blank"
-                className="bg-gradient-to-r from-[#61b241] to-emerald-600 hover:bg-gradient-to-l text-white px-6 py-2 rounded-full font-semibold transition cursor-pointer"
-              >
-                Gabung
-              </a>
+              <Button text="Gabung" href="https://wa.me/6289638442070" />
             </li>
           </ul>
 
@@ -105,13 +100,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://wa.me/6289638442070"
-                  target="_blank"
-                  className="bg-gradient-to-r from-[#61b241] to-emerald-600 hover:bg-gradient-to-l text-white px-6 py-2 rounded-full font-semibold transition cursor-pointer"
-                >
-                  Gabung
-                </a>
+                <Button text="Gabung" href="https://wa.me/6289638442070" />
               </li>
             </ul>
           </div>

@@ -1,3 +1,4 @@
+import Button from "../../../components/Button";
 import HeaderDots from "./dots";
 
 export default function HeaderServices() {
@@ -24,18 +25,19 @@ export default function HeaderServices() {
             className="rounded-lg shadow-lg"
           />
         </div>
-        <div className="text-center">
+        <div className="text-center mb-2">
           <p className="text-gray-100 text-2xl font-bold">Layanan Kami</p>
           <p className="text-gray-300 mb-5">
             Top Up all game termurah 24 jam, Joki MLBB terpercaya & aman, serta
             jual akun bergaransi seumur hidup.
           </p>
-          <a
+          {/* <a
             href="#mitra"
             className="bg-[#61b241] text-white px-6 py-2 rounded-full font-semibold hover:bg-red-[#61b241]/90 transition"
           >
             Lihat Semua
-          </a>
+          </a> */}
+          <Button text="Lihat Semua" href="#mitra" />
         </div>
       </div>
     </div>
