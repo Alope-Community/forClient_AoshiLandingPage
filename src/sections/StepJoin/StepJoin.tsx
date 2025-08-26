@@ -21,18 +21,18 @@ export default function StepJoinSection() {
             Berikut cara bergabung Mitra Aoshi
           </p>
         </div>
-        <div className="container relative mx-auto">
-          <div className="grid grid-cols-10 xl:grid-cols-11 gap-y-8">
-            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 p-10 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] text-left">
+        <div className="container relative mx-auto max-w-7xl">
+          <div className="grid grid-cols-10 xl:grid-cols-11 md:gap-y-8 gap-y-5">
+            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 lg:px-10 px-6 lg:py-10 py-8 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] text-left">
               <h2 className="text-xl font-semibold -my-2">
                 Klik Bergabung & hubungi admin via WhatsApp
               </h2>
-              <p className="text-white/50 leading-8">
+              <p className="text-white/50">
                 Tekan tombol{" "}
                 <a
                   href="https://wa.me/6289638442070"
                   target="_blank"
-                  className="bg-gradient-to-r from-[#61b241] to-emerald-600 hover:bg-gradient-to-l px-2 py-1.5 rounded-md text-white hover:bg-[#61b241]/90 transition duration-300 mx-2"
+                  className="bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent hover:from-emerald-600 hover:to-[#61b241] transition duration-300 mx-1 font-bold"
                 >
                   Bergabung
                 </a>
@@ -43,7 +43,7 @@ export default function StepJoinSection() {
             </div>
             <div className="xl:col-span-2 hidden xl:block"></div>
             <div className="xl:col-span-2 hidden xl:block"></div>
-            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 p-10 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] xl:col-start-7 text-left">
+            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 lg:px-10 px-6 lg:py-10 py-8 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] xl:col-start-7 text-left">
               <h2 className="text-xl font-semibold -my-2">
                 Konsultasi dengan admin
               </h2>
@@ -53,7 +53,7 @@ export default function StepJoinSection() {
               </p>
               <StepCount customClass="-left-[93px]" text="2" />
             </div>
-            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 p-10 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] text-left">
+            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 lg:px-10 px-6 lg:py-10 py-8 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] text-left">
               <h2 className="text-xl font-semibold -my-2">
                 Lakukan pendaftaran
               </h2>
@@ -65,7 +65,7 @@ export default function StepJoinSection() {
             </div>
             <div className="xl:col-span-2 hidden xl:block"></div>
             <div className="xl:col-span-2 hidden xl:block"></div>
-            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 p-10 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] xl:col-start-7 text-left">
+            <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 lg:px-10 px-6 lg:py-10 py-8 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] xl:col-start-7 text-left">
               <h2 className="text-xl font-semibold -my-2">
                 Selamat! Kamu bisa mulai bisnis modal 0 rupiah
               </h2>

@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "@types/react-scroll": "^1.8.10",
     "classnames": "^2.5.1",
     "lucide-react": "^0.539.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-scroll": "^1.9.3",
     "react-tilt": "^1.0.2"
   },
   "devDependencies": {

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Button from "./Button";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,24 +27,44 @@ export default function Navbar() {
           {/* Menu Desktop */}
           <ul className="hidden md:flex space-x-6 items-center text-sm font-medium">
             <li>
-              <a href="#" className="hover:text-[#61b241] transition">
+              <Link
+                to="header"
+                smooth={true}
+                duration={500}
+                className="hover:text-[#61b241] transition cursor-pointer"
+              >
                 Beranda
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#mitra" className="hover:text-[#61b241] transition">
+              <Link
+                to="mitra"
+                smooth={true}
+                duration={500}
+                className="hover:text-[#61b241] transition cursor-pointer"
+              >
                 Mulai Bisnis
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#faq" className="hover:text-[#61b241] transition">
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a href="#stepJoin" className="hover:text-[#61b241] transition">
+              <Link
+                to="stepJoin"
+                smooth={true}
+                duration={500}
+                className="hover:text-[#61b241] transition cursor-pointer"
+              >
                 Tahapan Gabung
-              </a>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="faq"
+                smooth={true}
+                duration={500}
+                className="hover:text-[#61b241] transition cursor-pointer"
+              >
+                FAQ
+              </Link>
             </li>
             <li>
               <Button text="Gabung" href="https://wa.me/6289638442070" />
@@ -61,43 +82,47 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-gradient-to-t from-black/90 to-black/40 backdrop-blur-md border-t border-white/10">
+          <div className="md:hidden bg-gradient-to-t from-black/90 to-black/40 backdrop-blur-md border-t border-white/10 px-5">
             <ul className="flex flex-col space-y-4 py-6 text-sm font-medium container mx-auto">
               <li className="mb-5">
-                <a
-                  href="#"
-                  onClick={() => setIsOpen(false)}
-                  className="hover:text-[#61b241] transition"
+                <Link
+                  to="header"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-[#61b241] transition cursor-pointer"
                 >
                   Beranda
-                </a>
+                </Link>
               </li>
               <li className="mb-5">
-                <a
-                  href="#mitra"
-                  onClick={() => setIsOpen(false)}
-                  className="hover:text-[#61b241] transition"
+                <Link
+                  to="mitra"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-[#61b241] transition cursor-pointer"
                 >
                   Mulai Bisnis
-                </a>
+                </Link>
               </li>
               <li className="mb-5">
-                <a
-                  href="#faq"
-                  onClick={() => setIsOpen(false)}
-                  className="hover:text-[#61b241] transition"
-                >
-                  FAQ
-                </a>
-              </li>
-              <li className="mb-10">
-                <a
-                  href="#stepJoin"
-                  onClick={() => setIsOpen(false)}
-                  className="hover:text-[#61b241] transition"
+                <Link
+                  to="stepJoin"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-[#61b241] transition cursor-pointer"
                 >
                   Tahapan Gabung
-                </a>
+                </Link>
+              </li>
+              <li className="mb-10">
+                <Link
+                  to="faq"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-[#61b241] transition cursor-pointer"
+                >
+                  FAQ
+                </Link>
               </li>
               <li>
                 <Button text="Gabung" href="https://wa.me/6289638442070" />

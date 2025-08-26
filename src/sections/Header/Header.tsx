@@ -14,13 +14,16 @@ const defaultOptions = {
 
 export default function HeaderSection() {
   return (
-    <header className="py-20 bg-gradient-to-b from-black via-[#61b241]/30 to-black relative xl:px-0 lg:px-8 px-5">
+    <header
+      id="header"
+      className="py-20 bg-gradient-to-b from-black via-[#61b241]/30 to-black relative xl:px-0 lg:px-8 px-5"
+    >
       <div className="container relative pt-14 md:pt-32 pb-20 mx-auto flex flex-col lg:flex-row items-center gap-12 w-full">
         <div className="w-full lg:w-3/5 space-y-6 lg:order-1 order-2 lg:text-left text-center">
           <p className="text-gray-200 text-lg sm:text-2xl mb-3 sm:mb-0">
             Ingin punya penghasilan dari game?
           </p>
-          <h1 className="text-3xl sm:text-5xl font-bold leading-tight">
+          <h1 className="text-2xl sm:text-5xl font-bold leading-tight">
             Saatnya jadi bagian dari <br />{" "}
             <span className="bg-gradient-to-r from-[#61b241] to-emerald-600 bg-clip-text text-transparent font-extrabold text-5xl">
               Mitra Aoshi!

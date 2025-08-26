@@ -43,7 +43,7 @@ export function WhyChooseCard(props: WhyChooseCardCardProps) {
   return (
     <div className="text-left p-6 bg-white/5 backdrop-blur-xl rounded-3xl flex flex-col gap-6 border-2 border-white/10 relative overflow-hidden">
       <div className="flex flex-col gap-3">
-        <h3 className="font-sans text-white font-medium text-2xl/[120%]">
+        <h3 className="font-sans text-white font-medium lg:text-2xl/[120%] text-xl">
           {props.title}
         </h3>
         <p className="text-sm/[140%] font-sans text-white/70">{props.desc}.</p>

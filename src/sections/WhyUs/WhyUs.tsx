@@ -18,7 +18,7 @@ export default function WhyUsSection() {
             Simak keunggulan Kami dibawah Ini!
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 sm:gap-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8 sm:gap-5 gap-4">
             <WhyChooseCard
               title="Modal Murah"
               desc="Jualan jadi makin gampang karena kamu punya modal harga termurah!"
