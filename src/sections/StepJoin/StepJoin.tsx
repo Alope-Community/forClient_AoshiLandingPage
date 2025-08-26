@@ -21,7 +21,7 @@ export default function StepJoinSection() {
             Berikut cara bergabung Mitra Aoshi
           </p>
         </div>
-        <div className="container relative mx-auto">
+        <div className="container relative mx-auto max-w-7xl">
           <div className="grid grid-cols-10 xl:grid-cols-11 md:gap-y-8 gap-y-5">
             <div className="relative col-span-10 xl:col-span-5 rounded-3xl border border-white/10 lg:px-10 px-6 lg:py-10 py-8 bg-white/5 flex flex-col gap-6 backdrop-blur-[32px] text-left">
               <h2 className="text-xl font-semibold -my-2">
