@@ -17,7 +17,7 @@ export default function ServiceSection() {
           </span>
         </h3>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10 mt-10 text-left">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 xl:gap-10 sm:gap-5 gap-7 mt-10 text-left">
           <OurServiceCard
             icon={<Gem />}
             title="Top Up All Games Termurah"

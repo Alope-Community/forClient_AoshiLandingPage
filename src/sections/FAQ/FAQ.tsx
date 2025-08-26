@@ -32,7 +32,7 @@ export default function FAQSection() {
       id="faq"
       className="bg-gradient-to-tl from-black to-[#61b241]/30 xl:px-0 lg:px-8 px-5 shadow-lg py-20 relative"
     >
-      <div className="container mx-auto grid lg:grid-cols-2">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-3">
         <div className="lg:mb-0 mb-10 text-center lg:text-left pt-14">
           <Badge text="FAQs" />
           <h2 className="text-3xl sm:text-4xl text-white font-bold mt-5">

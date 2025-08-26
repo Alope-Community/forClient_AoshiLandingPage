@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 export default function Footer() {
   return (
     <div>
@@ -18,24 +20,44 @@ export default function Footer() {
             <h4 className="text-white text-lg font-semibold mb-3">Links</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="#" className="hover:text-[#61b241] transition">
+                <Link
+                  to="header"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-[#61b241] transition cursor-pointer"
+                >
                   Beranda
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#mitra" className="hover:text-[#61b241] transition">
+                <Link
+                  to="mitra"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-[#61b241] transition cursor-pointer"
+                >
                   Mulai Bisnis
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#faq" className="hover:text-[#61b241] transition">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#stepJoin" className="hover:text-[#61b241] transition">
+                <Link
+                  to="stepJoin"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-[#61b241] transition cursor-pointer"
+                >
                   Tahapan Gabung
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="faq"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-[#61b241] transition cursor-pointer"
+                >
+                  FAQ
+                </Link>
               </li>
             </ul>
           </div>
